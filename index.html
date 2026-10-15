@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Club WUF | Apadrina a un perro</title>
+<meta name="description" content="Apadrina a un perro desde S/ 9.90 y cambia su historia. Además, accede a descuentos para ti y tu mascota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800;900&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- GUÍA: edita textos y precios (data-price) libremente. Fotos: dentro de cualquier <figure class="media"> agrega <img src="foto.jpg" alt="..."> y tapa la ilustración.
+     Pago real: pega tu link en data-url="" del botón. Vacío = flujo de demostración. Colores: variables al inicio de styles.css. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="dog" viewBox="0 0 120 120"><path class="ear" d="M24 34C4 38 4 82 24 88c10-4 12-34 10-54zM96 34c20 4 20 48 0 54-10-4-12-34-10-54z"/><ellipse class="fur" cx="60" cy="62" rx="38" ry="40"/><ellipse class="mz" cx="60" cy="80" rx="21" ry="16"/><ellipse class="ink" cx="60" cy="71" rx="8" ry="6"/><circle class="ink" cx="45" cy="55" r="5"/><circle class="ink" cx="75" cy="55" r="5"/><circle fill="#fff" cx="46.5" cy="53.5" r="1.7"/><circle fill="#fff" cx="76.5" cy="53.5" r="1.7"/><path d="M52 86q8 7 16 0" stroke="#2b1f18" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M56 89q4 11 8 0z" fill="#ff8fa3"/></symbol>
+<symbol id="cat" viewBox="0 0 120 120"><path class="fur" d="M22 52L28 10l28 22zM98 52l-6-42-28 22z"/><path class="pk" d="M31 40l3-16 12 10zM89 40l-3-16-12 10z"/><ellipse class="fur" cx="60" cy="68" rx="40" ry="36"/><ellipse class="ink" cx="44" cy="64" rx="5" ry="7"/><ellipse class="ink" cx="76" cy="64" rx="5" ry="7"/><path class="pk" d="M55 74h10l-5 6z"/><path d="M60 80q-6 8-13 3M60 80q6 8 13 3M22 76l16 3M22 86l16-3M98 76l-16 3M98 86l-16-3" stroke="#2b1f18" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="i-paw" viewBox="0 0 24 24"><circle cx="5" cy="11" r="2.2"/><circle cx="9.5" cy="6.5" r="2.2"/><circle cx="14.5" cy="6.5" r="2.2"/><circle cx="19" cy="11" r="2.2"/><path d="M12 11c-3 0-6 3.2-6 6 0 2 1.6 3 3 3 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.4 0 3-1 3-3 0-2.8-3-6-6-6z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+<symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0zM8 7c0-2 2-2 2-4M14 7c0-2 2-2 2-4"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/></symbol>
+<symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12zM7.5 8.5h.01"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <a class="brand" href="#inicio"><svg class="i f"><use href="#i-paw"/></svg>WUF</a>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><svg class="i"><use href="#i-menu"/></svg></button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#planes">Planes</a><a href="#adopta">Adopta</a><a href="#beneficios">Beneficios</a>
+    <a href="#consultas">Consultas</a><a href="#blog">Blog</a><a href="#nosotros">Nosotros</a>
+    <a class="btn btn-honey" href="#planes"><svg class="i"><use href="#i-heart"/></svg>Ayuda aquí</a>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="pawbg"><div class="wrap hero">
+  <div class="hero-copy">
+    <h1>Apadrina a un perro. Cambia su historia.</h1>
+    <p class="lead">Más de 750 perros en albergues afiliados esperan un plato lleno y alguien que crea en ellos. Ese alguien puedes ser tú, desde S/ 9.90 al mes.</p>
+    <div class="row"><a class="btn btn-honey" href="#planes"><svg class="i"><use href="#i-heart"/></svg>Apadrinar ahora</a><a class="btn btn-line" href="#adopta"><svg class="i f"><use href="#i-paw"/></svg>Quiero adoptar</a></div>
+  </div>
+  <div class="calc">
+    <svg class="scene" viewBox="0 0 320 235" role="img" aria-label="Un perro y un gato asomados a un plato de comida que se llena según tu aporte">
+      <defs><pattern id="kib" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="4" fill="#8a5a2b"/><circle cx="12" cy="11" r="4" fill="#b07a3c"/></pattern>
+      <clipPath id="bc"><path d="M65 150h190q-6 62-95 62-89 0-95-62z"/></clipPath></defs>
+      <path d="M50 140C20 80 70 15 150 15s150 50 120 120-80 95-140 90S70 200 50 140z" fill="var(--honey-soft)"/>
+      <g class="hero-dog"><use href="#dog" x="62" y="38" width="130" height="130" style="--fur:#c98a45;--ear:#97602b;--mz:#f6e2c0"/></g>
+      <use href="#cat" x="188" y="78" width="78" height="78" style="--fur:#8d949b"/>
+      <path d="M65 150h190q-6 62-95 62-89 0-95-62z" fill="#17382e"/>
+      <rect id="fill" x="60" y="212" width="200" height="70" fill="url(#kib)" clip-path="url(#bc)"/>
+      <ellipse cx="160" cy="150" rx="95" ry="9" fill="var(--pine)"/>
+    </svg>
+    <output id="cAmt">S/ 60</output><span class="muted">de aporte mensual</span>
+    <input id="cRange" type="range" min="10" max="300" step="5" value="60" aria-label="Aporte mensual en soles">
+    <p class="calc-out"><b id="cKg">12 kg</b> de comida al mes: alimenta a <b id="cDogs">1 perro</b> durante un mes.</p>
+  </div>
+</div></section>
+
+<section id="como" class="sec wrap">
+  <header class="sec-head"><h2>Así de fácil</h2></header>
+  <ol class="steps">
+    <li><svg class="i"><use href="#i-paw"/></svg><h3>Elige tu plan</h3><p>Desde un Chihuahua hasta un Rottweiler: cada tamaño es una ayuda distinta.</p></li>
+    <li><svg class="i"><use href="#i-heart"/></svg><h3>Aporta cada mes</h3><p>Tu dinero se vuelve comida, medicinas y campañas de adopción.</p></li>
+    <li><svg class="i"><use href="#i-doc"/></svg><h3>Mira el resultado</h3><p>Recibe reportes de ayuda y descuentos para ti y tu mascota.</p></li>
+  </ol>
+</section>
+
+<section id="planes" class="sec wrap">
+  <header class="sec-head">
+    <h2>Planes de ayuda</h2>
+    <p>Cada plan lleva el nombre de un perro: mientras más grande, más ayuda.</p>
+    <div class="seg" id="period" role="group" aria-label="Frecuencia de pago">
+      <button class="on" data-p="1">Mensual</button><button data-p="2">Bimestral</button><button data-p="12">Anual</button>
+    </div>
+  </header>
+  <div class="plans">
+    <article class="plan" data-name="Plan Chihuahua" data-price="9.90">
+      <svg class="pic" style="--fur:#e3b98d;--ear:#bf8c5a;--mz:#fbeedb;width:62px"><use href="#dog"/></svg>
+      <h3>Chihuahua</h3><p class="kg"><b>1.5</b> kg de comida al mes</p>
+      <p class="price"><span class="js-price">S/ 9.90</span> <small class="js-per">al mes</small></p><p class="note js-note"></p>
+      <button class="btn" data-checkout data-url="">Afiliarme</button></article>
+    <article class="plan" data-name="Plan Labrador" data-price="24.90">
+      <svg class="pic" style="--fur:#e8c373;--ear:#cf9f45;--mz:#f9e8bd;width:78px"><use href="#dog"/></svg>
+      <h3>Labrador</h3><p class="kg"><b>5</b> kg de comida al mes</p>
+      <p class="price"><span class="js-price">S/ 24.90</span> <small class="js-per">al mes</small></p><p class="note js-note"></p>
+      <button class="btn" data-checkout data-url="">Afiliarme</button></article>
+    <article class="plan featured" data-name="Plan WUF" data-price="59.90">
+      <span class="badge">El favorito</span>
+      <svg class="pic" style="--fur:#c98a45;--ear:#97602b;--mz:#f6e2c0;width:94px"><use href="#dog"/></svg>
+      <h3>WUF</h3><p class="kg"><b>12</b> kg de comida al mes</p>
+      <p class="price"><span class="js-price">S/ 59.90</span> <small class="js-per">al mes</small></p><p class="note js-note"></p>
+      <button class="btn btn-honey" data-checkout data-url="">Afiliarme</button></article>
+    <article class="plan" data-name="Plan Golden" data-price="99.90">
+      <svg class="pic" style="--fur:#dc9d3e;--ear:#b87a22;--mz:#f7dfae;width:108px"><use href="#dog"/></svg>
+      <h3>Golden</h3><p class="kg"><b>20</b> kg de comida al mes</p>
+      <p class="price"><span class="js-price">S/ 99.90</span> <small class="js-per">al mes</small></p><p class="note js-note"></p>
+      <button class="btn" data-checkout data-url="">Afiliarme</button></article>
+    <article class="plan" data-name="Plan Rottweiler" data-price="299.90" data-annual>
+      <svg class="pic" style="--fur:#3a2c26;--ear:#1f1612;--mz:#c4853f;width:122px"><use href="#dog"/></svg>
+      <h3>Rottweiler</h3><p class="kg"><b>60</b> kg de comida al año</p>
+      <p class="price"><span class="js-price">S/ 299.90</span> <small class="js-per">al año</small></p><p class="note js-note">Solo pago anual</p>
+      <button class="btn" data-checkout data-url="">Afiliarme</button></article>
+  </div>
+  <div class="duo">
+    <article class="panel" id="free" data-name="Plan libre">
+      <h3><svg class="i"><use href="#i-heart"/></svg>Plan libre</h3>
+      <p>Tú eliges el monto mensual. S/ 5.00 equivale a 1 kg de comida.</p>
+      <label>Monto mensual (S/)<input id="freeAmt" type="number" min="5" step="1" value="20" inputmode="numeric"></label>
+      <p class="hint" id="freeKg"></p>
+      <button class="btn" id="freeBtn" data-url="">Afiliarme</button><small>No es considerado apadrinamiento.</small>
+    </article>
+    <article class="panel" id="once" data-name="Donación única">
+      <h3><svg class="i"><use href="#i-bowl"/></svg>Donación única</h3>
+      <p>¿Solo por esta vez? Toda ayuda suma.</p>
+      <div class="chips" id="chips"><button>10</button><button>30</button><button>50</button><button>100</button></div>
+      <label>Monto (S/)<input id="oneAmt" type="number" min="1" step="1" value="30" inputmode="numeric"></label>
+      <button class="btn" id="oneBtn" data-url="">Donar ahora</button><small>No es considerado apadrinamiento.</small>
+    </article>
+  </div>
+</section>
+
+<section id="impacto" class="impact pawbg dark"><div class="wrap">
+  <h2>Lo que ya logramos juntos</h2>
+  <div class="stats">
+    <div><svg class="i"><use href="#i-bowl"/></svg><b data-n="98">0</b><span>toneladas de alimento donado</span></div>
+    <div><svg class="i"><use href="#i-shield"/></svg><b data-n="16" data-u="mil">0</b><span>animales esterilizados</span></div>
+    <div><svg class="i"><use href="#i-plus"/></svg><b data-n="23" data-u="mil">0</b><span>animales con medicinas</span></div>
+    <div><svg class="i"><use href="#i-heart"/></svg><b data-n="110" data-u="mil">0</b><span>animales que recibieron ayuda</span></div>
+  </div>
+</div></section>
+
+<section id="adopta" class="sec wrap">
+  <header class="sec-head"><h2>Adopta</h2><p>Todos buscan un hogar. Conoce a algunos de ellos.</p>
+    <div class="seg" id="filter" role="group" aria-label="Filtrar"><button class="on" data-f="all">Todos</button><button data-f="wuf">Wufs</button><button data-f="miau">Miaus</button></div>
+  </header>
+  <div class="pets">
+    <article class="pet" data-type="wuf" data-name="Canela"><figure class="media" style="--tint:#ffe3ad"><svg class="pic" style="--fur:#c98a45;--ear:#97602b;--mz:#f6e2c0"><use href="#dog"/></svg></figure><h3>Canela</h3><p>Mestiza, 2 años. Cariñosa y juguetona, se lleva bien con niños.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerla</button></article>
+    <article class="pet" data-type="wuf" data-name="Thor"><figure class="media" style="--tint:#d5e6dc"><svg class="pic" style="--fur:#7b8087;--ear:#555a62;--mz:#ddd8cf"><use href="#dog"/></svg></figure><h3>Thor</h3><p>Mestizo, 4 años. Tranquilo, ideal para casa con patio.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerlo</button></article>
+    <article class="pet" data-type="miau" data-name="Luna"><figure class="media" style="--tint:#ffd9cf"><svg class="pic" style="--fur:#9aa1a8"><use href="#cat"/></svg></figure><h3>Luna</h3><p>Gata, 1 año. Curiosa, esterilizada y vacunada.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerla</button></article>
+    <article class="pet" data-type="wuf" data-name="Rocky"><figure class="media" style="--tint:#e4e9c9"><svg class="pic" style="--fur:#e9d3b0;--ear:#b98a52;--mz:#fff6e6"><use href="#dog"/></svg></figure><h3>Rocky</h3><p>Mestizo, 6 meses. Lleno de energía, necesita paseos diarios.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerlo</button></article>
+    <article class="pet" data-type="miau" data-name="Michi"><figure class="media" style="--tint:#cfe3ef"><svg class="pic" style="--fur:#ee9b4a"><use href="#cat"/></svg></figure><h3>Michi</h3><p>Gato, 3 años. Independiente y muy dormilón.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerlo</button></article>
+    <article class="pet" data-type="wuf" data-name="Mora"><figure class="media" style="--tint:#f3d6e4"><svg class="pic" style="--fur:#3a2c26;--ear:#1f1612;--mz:#c4853f"><use href="#dog"/></svg></figure><h3>Mora</h3><p>Mestiza, 3 años. Dulce y obediente, aprende rápido.</p><button class="btn btn-line" data-adopt><svg class="i"><use href="#i-heart"/></svg>Quiero conocerla</button></article>
+  </div>
+</section>
+
+<section id="beneficios" class="sec wrap">
+  <header class="sec-head"><h2>Beneficios del Club</h2><p>Al afiliarte, tú y tu mascota reciben descuentos. (Ejemplos editables.)</p></header>
+  <div class="perks">
+    <div><svg class="i"><use href="#i-plus"/></svg><h3>Veterinarias aliadas</h3><p>Descuentos en consultas, vacunas y esterilización.</p></div>
+    <div><svg class="i"><use href="#i-bowl"/></svg><h3>Tiendas de mascotas</h3><p>Ofertas en alimento, accesorios y camas.</p></div>
+    <div><svg class="i"><use href="#i-drop"/></svg><h3>Baño y estética</h3><p>Precios especiales en baño, corte y spa.</p></div>
+    <div><svg class="i"><use href="#i-tag"/></svg><h3>Eventos WUF</h3><p>Entradas con descuento a campañas y encuentros.</p></div>
+  </div>
+</section>
+
+<section id="consultas" class="sec wrap narrow">
+  <header class="sec-head"><h2>Consultas frecuentes</h2></header>
+  <details><summary>¿Qué es apadrinar?</summary><p>Es aportar de forma periódica para cubrir comida, salud y adopción de perros en albergues afiliados.</p></details>
+  <details><summary>¿Puedo cancelar mi plan?</summary><p>Sí. Escríbenos y gestionamos la baja sin penalidad.</p></details>
+  <details><summary>¿Qué diferencia hay entre plan y donación única?</summary><p>El plan es un aporte recurrente que te da acceso a beneficios. La donación única es un aporte puntual.</p></details>
+  <details><summary>¿Cómo sé en qué se usa mi dinero?</summary><p>Publicamos reportes de ayuda con el alimento, las esterilizaciones y las medicinas entregadas.</p></details>
+  <details><summary>¿Cómo adopto?</summary><p>Elige a un Wuf o un Miau en la sección Adopta y completa el formulario. Te contactaremos.</p></details>
+</section>
+
+<section id="blog" class="sec wrap">
+  <header class="sec-head"><h2>Blog</h2></header>
+  <div class="posts">
+    <article class="post"><figure class="media" style="--tint:#ffe3ad"><svg class="pic i f" style="color:#e9a13a"><use href="#i-paw"/></svg></figure><time datetime="2026-09-12">12 de septiembre, 2026</time><h3>Cinco cuidados básicos para un perro adoptado</h3><details><summary>Leer más</summary><p>Contenido del artículo. Reemplaza este texto con tu nota completa.</p></details></article>
+    <article class="post"><figure class="media" style="--tint:#d5e6dc"><svg class="pic i" style="color:#2f6b57"><use href="#i-shield"/></svg></figure><time datetime="2026-08-30">30 de agosto, 2026</time><h3>Por qué esterilizar salva vidas</h3><details><summary>Leer más</summary><p>Contenido del artículo. Reemplaza este texto con tu nota completa.</p></details></article>
+    <article class="post"><figure class="media" style="--tint:#ffd9cf"><svg class="pic i" style="color:#e2694a"><use href="#i-plus"/></svg></figure><time datetime="2026-08-05">5 de agosto, 2026</time><h3>Así fue nuestra última campaña de salud</h3><details><summary>Leer más</summary><p>Contenido del artículo. Reemplaza este texto con tu nota completa.</p></details></article>
+  </div>
+</section>
+
+<section id="nosotros" class="sec wrap">
+  <div class="about">
+    <div><h2>Nosotros</h2><p class="lead">Somos una comunidad que conecta a personas con albergues para que ningún perro o gato se quede sin comida, atención médica ni familia.</p>
+    <a class="btn" href="mailto:equipo@wuf.pe"><svg class="i"><use href="#i-mail"/></svg>Escríbenos</a></div>
+    <figure class="media wide" style="--tint:#ffe3ad"><svg class="pic" style="--fur:#c98a45;--ear:#97602b;--mz:#f6e2c0"><use href="#dog"/></svg><svg class="pic cat2" style="--fur:#8d949b"><use href="#cat"/></svg></figure>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <p class="brand"><svg class="i f"><use href="#i-paw"/></svg>WUF</p>
+  <p>Escríbenos a <a href="mailto:equipo@wuf.pe">equipo@wuf.pe</a></p>
+  <small>Prototipo académico sin fines de lucro. No se realizan cobros reales. *Cálculo referencial según el precio de 1 kg de comida.</small>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <form id="form" method="dialog">
+    <button class="x" value="cancel" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button>
+    <h3 id="dTitle"></h3><p id="dSum"></p>
+    <label>Nombre<input name="nombre" required autocomplete="name"></label>
+    <label>Correo<input name="correo" type="email" required autocomplete="email"></label>
+    <button class="btn" id="dOk" value="ok">Continuar</button>
+  </form>
+  <div id="done" hidden><svg class="pic" style="--fur:#c98a45;--ear:#97602b;--mz:#f6e2c0;width:90px"><use href="#dog"/></svg><h3>¡Gracias por ayudar!</h3><p id="doneMsg"></p><button class="btn" id="doneClose">Cerrar</button></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
